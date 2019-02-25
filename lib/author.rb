@@ -13,7 +13,7 @@ class Author
     @posts 
   end 
   
-  def track_posts 
+  def track_posts(post)
     @posts << post 
     @@all_posts << post 
   end 
@@ -21,7 +21,7 @@ class Author
   def add_post(post)
     #@posts << post 
     #@@all_posts << post
-    track_posts 
+    track_posts(post)
     post.author = self 
   end 
   
