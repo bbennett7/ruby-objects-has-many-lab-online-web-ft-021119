@@ -19,16 +19,12 @@ class Author
   end 
   
   def add_post(post)
-    #@posts << post 
-    #@@all_posts << post
     track_posts(post)
     post.author = self 
   end 
   
   def add_post_by_title(post)
     post = Post.new(post)
-    #@posts << post 
-    #@@all_posts << post
     track_posts(post)
     post.author = self 
   end 
