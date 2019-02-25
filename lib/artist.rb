@@ -14,7 +14,7 @@ class Artist
   end 
   
   def track_songs(song)
-    @song << song 
+    @songs << song 
     @@all_songs << song 
   end 
   
