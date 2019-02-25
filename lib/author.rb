@@ -29,7 +29,7 @@ class Author
     post = Post.new(post)
     #@posts << post 
     #@@all_posts << post
-    track_posts 
+    track_posts(post)
     post.author = self 
   end 
   
